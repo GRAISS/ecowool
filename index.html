@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="ECOWOOL - Строительство экологичных домов с утеплением эковатой. Современные энергоэффективные дома под ключ.">
+  <meta name="keywords" content="экодома, эковата, строительство домов, энергоэффективные дома, каркасные дома">
+  
+  <!-- Preconnect to Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500;600&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <title>ECOWOOL | Экологичные дома из эковаты</title>
+  
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Page Loader -->
+  <div class="loader">
+    <div class="loader__content">
+      <svg class="loader__logo" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="50" cy="50" r="45" stroke="white" stroke-width="2"/>
+        <path d="M50 20V80M20 50H80" stroke="white" stroke-width="2" stroke-linecap="round"/>
+        <circle cx="50" cy="50" r="15" fill="white"/>
+      </svg>
+      <p class="loader__text">Загрузка...</p>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="header">
+    <a href="index.html" class="header__logo">
+      <svg class="header__logo-icon" viewBox="0 0 40 40" fill="currentColor">
+        <path d="M20 5L5 15V35H15V25H25V35H35V15L20 5Z"/>
+      </svg>
+      ECOWOOL
+    </a>
+    
+    <nav class="header__nav">
+      <ul class="header__nav-links">
+        <li><a href="index.html" class="header__nav-link">Главная</a></li>
+        <li><a href="catalog.html" class="header__nav-link">Каталог</a></li>
+        <li><a href="about.html" class="header__nav-link">О компании</a></li>
+        <li><a href="technology.html" class="header__nav-link">Технология</a></li>
+        <li><a href="gallery.html" class="header__nav-link">Галерея</a></li>
+        <li><a href="contact.html" class="header__nav-link">Контакты</a></li>
+      </ul>
+      <a href="contact.html" class="header__cta">Заказать звонок</a>
+    </nav>
+    
+    <button class="menu-toggle" aria-label="Меню">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </header>
+
+  <!-- Mobile Navigation -->
+  <div class="mobile-nav">
+    <a href="index.html" class="mobile-nav__link">Главная</a>
+    <a href="catalog.html" class="mobile-nav__link">Каталог</a>
+    <a href="about.html" class="mobile-nav__link">О компании</a>
+    <a href="technology.html" class="mobile-nav__link">Технология</a>
+    <a href="gallery.html" class="mobile-nav__link">Галерея</a>
+    <a href="contact.html" class="mobile-nav__link">Контакты</a>
+  </div>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero__background">
+        <div class="hero__overlay"></div>
+        <img 
+          src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1920 1080'%3E%3Crect fill='%232d5a3d' width='1920' height='1080'/%3E%3C/svg%3E" 
+          alt="Современный экодом" 
+          class="hero__image"
+        />
+      </div>
+      
+      <div class="hero__content">
+        <p class="hero__subtitle">Экологичное домостроение</p>
+        <h1 class="hero__title">Дома будущего<br>из эковаты</h1>
+        <p class="hero__description">
+          Строим энергоэффективные дома премиум-класса с использованием 
+          инновационного утеплителя из натуральной целлюлозы
+        </p>
+        <div class="hero__buttons">
+          <a href="catalog.html" class="btn btn-primary">
+            Смотреть проекты
+            <span class="btn-arrow"></span>
+          </a>
+          <a href="technology.html" class="btn btn-secondary">
+            О технологии
+          </a>
+        </div>
+      </div>
+      
+      <div class="hero__scroll">
+        <span>Листайте вниз</span>
+        <div class="hero__scroll-line"></div>
+      </div>
+    </section>
+
+    <!-- Advantages Section -->
+    <section class="advantages section">
+      <div class="container">
+        <div class="section__header fade-in">
+          <span class="section__subtitle">Преимущества</span>
+          <h2 class="section__title">Почему выбирают ECOWOOL</h2>
+        </div>
+        
+        <div class="advantages__grid stagger">
+          <div class="advantage-card fade-in">
+            <svg class="advantage-card__icon" viewBox="0 0 60 60" fill="currentColor">
+              <path d="M30 5L10 15V45L30 55L50 45V15L30 5ZM30 12L45 20V42L30 50L15 42V20L30 12Z"/>
+              <circle cx="30" cy="30" r="8"/>
+            </svg>
+            <h3 class="advantage-card__title">Энергоэффективность</h3>
+            <p class="advantage-card__text">
+              Дома сохраняют тепло зимой и прохладу летом, снижая расходы на отопление до 40%
+            </p>
+          </div>
+          
+          <div class="advantage-card fade-in">
+            <svg class="advantage-card__icon" viewBox="0 0 60 60" fill="currentColor">
+              <path d="M30 5C16.2 5 5 16.2 5 30s11.2 25 25 25 25-11.2 25-25S43.8 5 30 5zm0 45c-11 0-20-9-20-20S19 10 30 10s20 9 20 20-9 20-20 20z"/>
+              <path d="M30 15v15l10 5"/>
+            </svg>
+            <h3 class="advantage-card__title">Экологичность 100%</h3>
+            <p class="advantage-card__text">
+              Используем только натуральные материалы, безопасные для здоровья и окружающей среды
+            </p>
+          </div>
+          
+          <div class="advantage-card fade-in">
+            <svg class="advantage-card__icon" viewBox="0 0 60 60" fill="currentColor">
+              <path d="M10 30L25 45L50 15"/>
+              <rect x="5" y="5" width="50" height="50" rx="5" fill="none" stroke="currentColor" stroke-width="3"/>
+            </svg>
+            <h3 class="advantage-card__title">Гарантия 50 лет</h3>
+            <p class="advantage-card__text">
+              Уверены в качестве наших домов и предоставляем расширенную гарантию на все конструкции
+            </p>
+          </div>
+          
+          <div class="advantage-card fade-in">
+            <svg class="advantage-card__icon" viewBox="0 0 60 60" fill="currentColor">
+              <circle cx="30" cy="30" r="25" fill="none" stroke="currentColor" stroke-width="3"/>
+              <path d="M30 15v15l10 5"/>
+              <circle cx="30" cy="30" r="3"/>
+            </svg>
+            <h3 class="advantage-card__title">Быстрое строительство</h3>
+            <p class="advantage-card__text">
+              Возведение дома за 2-3 месяца благодаря современным технологиям и собственному производству
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Projects -->
+    <section class="projects section section--cream">
+      <div class="container">
+        <div class="section__header fade-in">
+          <span class="section__subtitle">Проекты</span>
+          <h2 class="section__title">Популярные проекты домов</h2>
+          <p class="section__description">
+            Выберите идеальный дом для вашей семьи из нашей коллекции проверенных проектов
+          </p>
+        </div>
+        
+        <div class="projects__grid stagger">
+          <div class="project-card fade-in">
+            <img 
+              src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 600'%3E%3Crect fill='%234a7c59' width='800' height='600'/%3E%3C/svg%3E" 
+              alt="Проект Эко-1" 
+              class="project-card__image"
+            />
+            <div class="project-card__content">
+              <h3 class="project-card__title">Эко-1</h3>
+              <p class="project-card__meta">120 м² • 2 спальни • 1 этаж</p>
+            </div>
+          </div>
+          
+          <div class="project-card fade-in">
+            <img 
+              src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 600'%3E%3Crect fill='%233d6b4f' width='800' height='600'/%3E%3C/svg%3E" 
+              alt="Проект Лесной" 
+              class="project-card__image"
+            />
+            <div class="project-card__content">
+              <h3 class="project-card__title">Лесной</h3>
+              <p class="project-card__meta">185 м² • 3 спальни • 2 этажа</p>
+            </div>
+          </div>
+          
+          <div class="project-card fade-in">
+            <img 
+              src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 600'%3E%3Crect fill='%232d5a3d' width='800' height='600'/%3E%3C/svg%3E" 
+              alt="Проект Семейный" 
+              class="project-card__image"
+            />
+            <div class="project-card__content">
+              <h3 class="project-card__title">Семейный</h3>
+              <p class="project-card__meta">240 м² • 4 спальни • 2 этажа</p>
+            </div>
+          </div>
+          
+          <div class="project-card fade-in">
+            <img 
+              src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 600'%3E%3Crect fill='%231e3d29' width='800' height='600'/%3E%3C/svg%3E" 
+              alt="Проект Премиум" 
+              class="project-card__image"
+            />
+            <div class="project-card__content">
+              <h3 class="project-card__title">Премиум</h3>
+              <p class="project-card__meta">320 м² • 5 спален • 2 этажа</p>
+            </div>
+          </div>
+        </div>
+        
+        <div style="text-align: center; margin-top: 4rem;">
+          <a href="catalog.html" class="btn btn-primary">
+            Весь каталог
+            <span class="btn-arrow"></span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials section">
+      <div class="container">
+        <div class="section__header fade-in">
+          <span class="section__subtitle">Отзывы</span>
+          <h2 class="section__title">Что говорят наши клиенты</h2>
+        </div>
+        
+        <div class="testimonials__slider">
+          <div class="testimonial-card">
+            <blockquote class="testimonial-card__quote">
+              Дом превзошёл все ожидания! Энергопотребление действительно минимальное, 
+              а микроклимат внутри просто потрясающий. Рекомендую ECOWOOL всем друзьям!
+            </blockquote>
+            <cite class="testimonial-card__author">Александр Петров</cite>
+            <p class="testimonial-card__location">Дом "Лесной", Московская область</p>
+          </div>
+          
+          <div class="testimonial-card" style="display: none;">
+            <blockquote class="testimonial-card__quote">
+              От первого звонка до новоселья прошло всего 4 месяца. Команда работает 
+              слаженно, качественно и в срок. Дом тёплый, тихий и очень уютный.
+            </blockquote>
+            <cite class="testimonial-card__author">Елена Смирнова</cite>
+            <p class="testimonial-card__location">Дом "Семейный", Ленинградская область</p>
+          </div>
+          
+          <div class="testimonial-card" style="display: none;">
+            <blockquote class="testimonial-card__quote">
+              Выбирали между несколькими технологиями, остановились на эковате и не пожалели. 
+              Зимой тепло, летом прохладно, никаких сквозняков и посторонних запахов.
+            </blockquote>
+            <cite class="testimonial-card__author">Дмитрий Волков</cite>
+            <p class="testimonial-card__location">Дом "Эко-1", Краснодарский край</p>
+          </div>
+        </div>
+        
+        <div class="testimonials__nav">
+          <span class="testimonial-dot active"></span>
+          <span class="testimonial-dot"></span>
+          <span class="testimonial-dot"></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta section">
+      <div class="cta__content">
+        <h2 class="cta__title">Готовы построить дом мечты?</h2>
+        <p class="cta__text">
+          Оставьте заявку на бесплатную консультацию и расчёт стоимости вашего будущего дома
+        </p>
+        <a href="contact.html" class="btn btn-primary" style="background: white; color: var(--color-primary);">
+          Записаться на консультацию
+          <span class="btn-arrow"></span>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <a href="index.html" class="header__logo">
+            <svg class="header__logo-icon" viewBox="0 0 40 40" fill="currentColor">
+              <path d="M20 5L5 15V35H15V25H25V35H35V15L20 5Z"/>
+            </svg>
+            ECOWOOL
+          </a>
+          <p>
+            Строительство экологичных домов премиум-класса с использованием 
+            инновационных материалов и технологий.
+          </p>
+          <div class="footer__social">
+            <a href="#" class="footer__social-link" aria-label="Telegram">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69.01-.03.01-.14-.07-.2-.08-.06-.19-.04-.27-.02-.11.02-1.93 1.23-5.46 3.62-.51.35-.98.52-1.4.51-.46-.01-1.35-.26-2.01-.48-.81-.27-1.44-.42-1.38-.88.03-.24.37-.49 1.03-.75 4.04-1.76 6.74-2.92 8.09-3.48 3.85-1.6 4.64-1.89 5.17-1.9.11 0 .37.03.54.17.14.12.18.28.2.45-.02.07-.02.13-.03.27z"/>
+              </svg>
+            </a>
+            <a href="#" class="footer__social-link" aria-label="WhatsApp">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+              </svg>
+            </a>
+            <a href="#" class="footer__social-link" aria-label="VKontakte">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M15.073 2H8.937C5.114 2 2 5.114 2 8.937v6.125C2 18.886 5.114 22 8.937 22h6.125C18.886 22 22 18.886 22 15.062V8.937C22 5.114 18.886 2 15.073 2zM17.8 13.806c.595.594.587 1.006.587 1.006s.005.315-.154.474c-.35.35-1.24.366-1.24.366s-2.71.162-5.125-2.062c-1.68-1.553-2.35-2.607-2.35-2.607s-.102-.275.01-.417c.125-.156.52-.164.52-.164s.636-.019.977.422c.313.406.492.758.492.758s.184.391.438.742c.494.684.875.852 1.07.773.293-.117.207-1.062.207-1.633 0-1.777.268-2.517 1.052-2.71.234-.058.404-.096.71-.102.907-.015 1.118.455 1.118.455s.664 1.358 1.438 2.57c1.47 2.303 2.066 2.742 2.26 2.742z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+        
+        <div class="footer__column">
+          <h4 class="footer__title">Навигация</h4>
+          <ul class="footer__links">
+            <li><a href="catalog.html" class="footer__link">Каталог домов</a></li>
+            <li><a href="about.html" class="footer__link">О компании</a></li>
+            <li><a href="technology.html" class="footer__link">Технология</a></li>
+            <li><a href="gallery.html" class="footer__link">Галерея</a></li>
+            <li><a href="contact.html" class="footer__link">Контакты</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer__column">
+          <h4 class="footer__title">Контакты</h4>
+          <ul class="footer__links">
+            <li><a href="tel:+78001234567" class="footer__link">8 (800) 123-45-67</a></li>
+            <li><a href="mailto:info@ecowool.ru" class="footer__link">info@ecowool.ru</a></li>
+            <li><span class="footer__link">Москва, ул. Примерная, 10</span></li>
+            <li><span class="footer__link">Пн-Пт: 9:00 - 18:00</span></li>
+          </ul>
+        </div>
+        
+        <div class="footer__column">
+          <h4 class="footer__title">Режим работы</h4>
+          <ul class="footer__links">
+            <li><span class="footer__link">Офис: Пн-Пт 9:00-18:00</span></li>
+            <li><span class="footer__link">Выставка: Ежедневно 10:00-19:00</span></li>
+            <li><span class="footer__link">Звонки: Круглосуточно</span></li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="footer__bottom">
+        <p class="footer__copyright">© 2024 ECOWOOL. Все права защищены.</p>
+        <div class="footer__legal">
+          <a href="#" class="footer__legal-link">Политика конфиденциальности</a>
+          <a href="#" class="footer__legal-link">Договор оферты</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
