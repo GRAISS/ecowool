@@ -1709,4 +1709,83 @@ h1, h2, h3, h4, h5, h6 {
 /* Parallax effect class */
 .parallax {
   will-change: transform;
+}/* ============================================
+   СВЕТЛЫЙ ТЕКСТ — переопределение цветов
+   Темные тексты заменены на светлые/белые
+   для удобства чтения на тёмных фонах
+   ============================================ */
+
+/* Основной текст и заголовки */
+body {
+  color: #F5F2EA;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #FFFFFF;
+}
+
+p, li, span, label, blockquote {
+  color: rgba(255, 255, 255, 0.88);
+}
+
+/* Вторичный и вспомогательный текст */
+.text-muted,
+.subtitle,
+.caption,
+.meta,
+small,
+footer p,
+footer span,
+footer li {
+  color: rgba(255, 255, 255, 0.72);
+}
+
+/* Секции hero и banner */
+.hero h1,
+.hero h2,
+.hero p,
+.hero-title,
+.hero-subtitle,
+.hero-description,
+.hero-content h1,
+.hero-content h2,
+.hero-content p {
+  color: #FFFFFF;
+}
+
+/* Заголовки секций и карточки */
+.section-title,
+.section-subtitle,
+.card-title,
+.card h3,
+.card p,
+.card span,
+.feature-title,
+.feature-text,
+.product-title,
+.product-description {
+  color: #FFFFFF;
+}
+
+/* Навигационные ссылки */
+nav a,
+.nav-link,
+.navbar a {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+/* Ссылки */
+a {
+  color: #e8c9a5;
+}
+
+a:hover {
+  color: #FFFFFF;
+}
+
+/* Кнопки с тёмным текстом — не меняем, оставляем как есть */
+.btn-primary,
+.btn-secondary,
+.btn {
+  /* цвет кнопок задаётся отдельными правилами */
 }
