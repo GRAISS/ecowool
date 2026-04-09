@@ -1789,3 +1789,101 @@ a:hover {
 .btn {
   /* цвет кнопок задаётся отдельными правилами */
 }
+
+/* ============================================
+   GLOBAL LIGHT TEXT OVERRIDE - Dark backgrounds
+   Apply global light text overrides on dark sections
+   ============================================ */
+
+/* Generic structural elements */
+body,
+section, div, article, aside, header, footer, main, nav,
+h1, h2, h3, h4, h5, h6,
+p, span, li, label, small, strong, em, blockquote {
+  color: inherit;
+}
+
+/* Dark section backgrounds - force light text */
+.hero, .hero__content, .hero__text,
+.section--dark, .section-dark, .dark-section, .dark-bg,
+.header, .header--scrolled,
+.footer, .footer__content,
+.cta, .cta-section, .cta__content,
+.about, .about__content,
+.contact, .contact__content,
+.banner, .banner__content,
+.overlay, .overlay__content {
+  color: #F5F2EA !important;
+}
+
+/* Headings on dark backgrounds */
+.hero h1, .hero h2, .hero h3, .hero h4, .hero h5, .hero h6,
+.section--dark h1, .section--dark h2, .section--dark h3,
+.section--dark h4, .section--dark h5, .section--dark h6,
+.dark-section h1, .dark-section h2, .dark-section h3,
+.dark-bg h1, .dark-bg h2, .dark-bg h3,
+.header h1, .header h2, .header h3,
+.footer h1, .footer h2, .footer h3, .footer h4,
+.cta h1, .cta h2, .cta h3,
+.about h1, .about h2, .about h3,
+.contact h1, .contact h2, .contact h3,
+.banner h1, .banner h2, .banner h3,
+[class*="dark"] h1, [class*="dark"] h2, [class*="dark"] h3,
+[class*="hero"] h1, [class*="hero"] h2, [class*="hero"] h3 {
+  color: #FFFFFF !important;
+}
+
+/* Paragraphs, spans, and text on dark backgrounds */
+.hero p, .hero span, .hero li, .hero label, .hero small,
+.section--dark p, .section--dark span, .section--dark li,
+.dark-section p, .dark-section span, .dark-section li,
+.dark-bg p, .dark-bg span, .dark-bg li,
+.footer p, .footer span, .footer li,
+.cta p, .cta span,
+.about p, .about span,
+.contact p, .contact span,
+.banner p, .banner span,
+[class*="dark"] p, [class*="dark"] span, [class*="dark"] li,
+[class*="hero"] p, [class*="hero"] span {
+  color: rgba(255, 255, 255, 0.88) !important;
+}
+
+/* Secondary / muted text on dark backgrounds */
+.hero .text-muted, .hero .subtitle, .hero .caption, .hero .meta,
+.section--dark .text-muted, .section--dark .subtitle,
+.dark-section .text-muted, .dark-section .subtitle,
+.footer .text-muted, .footer small, .footer .caption,
+[class*="dark"] .text-muted, [class*="dark"] .subtitle,
+[class*="hero"] .subtitle, [class*="hero"] .text-muted {
+  color: rgba(255, 255, 255, 0.72) !important;
+}
+
+/* Content class-named elements */
+.title, .heading, .text, .description, .content, .copy,
+.caption, .meta, .label {
+  color: inherit;
+}
+
+/* Enforce light text where inline dark colors may be set */
+[style*="color: #0"], [style*="color:#0"],
+[style*="color: #1"], [style*="color:#1"],
+[style*="color: #2"], [style*="color:#2"],
+[style*="color: #3"], [style*="color:#3"],
+[style*="color: rgb(0"], [style*="color:rgb(0"],
+[style*="color: rgb(1"], [style*="color:rgb(1"],
+[style*="color: rgb(2"], [style*="color:rgb(2"],
+[style*="color: rgb(3"], [style*="color:rgb(3"] {
+  color: #F5F2EA !important;
+}
+
+/* Nav links - ensure visibility */
+nav a, nav li, nav span,
+.nav a, .nav li, .nav span,
+.menu a, .menu li, .menu span,
+.navbar a, .navbar li, .navbar span {
+  color: rgba(255, 255, 255, 0.9) !important;
+}
+
+nav a:hover, .nav a:hover, .navbar a:hover, .menu a:hover {
+  color: #FFFFFF !important;
+}
